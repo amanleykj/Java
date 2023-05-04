@@ -19,16 +19,32 @@ public class CafeJava {
         String customer4 = "Noah";
     
         // Order completions (add yours below)
-        boolean isReadyOrder1 = false;
-    
-        // APP INTERACTION SIMULATION (Add your code for the challenges below)
-        // Example:
-        // System.out.println(generalGreeting + customer1);
-        // System.out.println(displayTotalMessage + cafeLattePrice + customer3);
-        // System.out.println(customer4 + readyMessage);
-        // System.out.println(customer2 + pendingMessage);
-        // System.out.println(customer1 + "!" + displayTotalMessage + dripPrice);
-    	// ** Your customer interaction print statements will go here ** //
+        boolean isReadyOrder1 = true;
+        boolean isReadyOrder2 = true;
+        boolean isReadyOrder3 = false;
+        boolean isReadyOrder4 = false;
+
+        // System.out.println(customer1.concat(", your coffee is ready and " + displayTotalMessage + dripPrice));
         
+        // if(isReadyOrder1){
+        //     System.out.println(customer4.concat(readyMessage + displayTotalMessage + cappucinoPrice));
+        // }
+        // else{
+        //     System.out.println(customer4.concat(pendingMessage));
+        // }
+
+        // System.out.println(customer2 + readyMessage + "." + displayTotalMessage + cafeLattePrice*2);
+
+        // if(isReadyOrder2){
+        //     System.out.println(customer2.concat(readyMessage + displayTotalMessage + cafeLattePrice*2));
+        // }
+        // else{
+        //     System.out.println(customer2.concat(pendingMessage));
+        // }
+
+        // System.out.println(customer3.concat(", your drink is ready and " + displayTotalMessage + dripPrice));
+        // System.out.println("Actually, you need to pay us an additional $" + (cafeLattePrice - dripPrice));
+
+
     }
 }
