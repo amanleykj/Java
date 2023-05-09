@@ -33,8 +33,8 @@ public class CafeUtil {
     
     public void displayMenu(ArrayList<String> menuItems) {
 
-        for (int id = 0; id < menuItems.size(); id++) {
-            System.out.printf("%s %s \n", id, menuItems.get(id));
+        for (int i = 0; i < menuItems.size(); i++) {
+            System.out.printf("%s %s \n", i, menuItems.get(i));
         }
     }
     
@@ -47,6 +47,19 @@ public class CafeUtil {
         for (int i = 0; i < customerList.size(); i++) {
             System.out.println(customerList.get(i));
         }
+
+    }
+
+    public void printPriceChart(String product, double price, int MaxQuantity) {
+        System.out.println("Enter the product name hereL: ");
+        String productName = System.console().readLine();
+        System.out.println("How much is this product?");
+        String productPriceString = System.console().readLine();
+        int productPrice = Integer.parseInt(productPriceString);
+        System.out.println(productName);
+        for (int i = 0; i )
+        System.out.println("1 - %s", productPrice);
+
 
     }
 

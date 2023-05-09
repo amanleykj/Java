@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class TestCafe {
     public static void main(String[] args) {
@@ -11,8 +10,8 @@ public class TestCafe {
 
         System.out.printf("Purchases needed by week 10: %s \n\n", appTest.getStreakGoal());
     
-        double[] lineItems = {3.5, 1.5, 4.0, 4.5};
-        System.out.printf("Order total: %s \n\n",appTest.getOrderTotal(lineItems));
+        double[] lineItems = {2.5, 3.5, 4.5, 4.2};
+        System.out.printf("Order total: $%s0 \n\n",appTest.getOrderTotal(lineItems));
         
         ArrayList<String> menu = new ArrayList<String>();
         menu.add("drip coffee");
