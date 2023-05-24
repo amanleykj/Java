@@ -1,0 +1,13 @@
+body {
+	display: flex;
+	padding: 25px;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.dateTime {
+	color: blue;
+}

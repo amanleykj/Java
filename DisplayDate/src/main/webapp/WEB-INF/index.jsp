@@ -5,13 +5,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Home</title>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-<h3><a href = "/date" >Date Template</a></h3>
-
-<h3><a href = "/time" >Time Template</a></h3>
+<div>
+	<h3><a href = "/date">Date Template</a></h3>
+	
+	<h3><a href = "/time">Time Template</a></h3>
+</div>
 
 </body>
 </html>

@@ -4,11 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Date</title>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-<h2><c:out value = "${date}" /></h2>
+<h2 class = "dateTime"><c:out value = "${date}" /></h2>
 
+<script src="/js/scriptDate.js"></script>
 </body>
 </html>
