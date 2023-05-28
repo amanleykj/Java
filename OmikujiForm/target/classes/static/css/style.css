@@ -1,0 +1,11 @@
+body {
+	padding: 25px;
+	margin: 5px;
+}
+
+#omikuji-box {
+	background-color: blue;
+	color: white;
+	aspect-ratio: 1/1;
+	width: 400px;
+}
