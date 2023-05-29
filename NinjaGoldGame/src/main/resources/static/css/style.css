@@ -1,0 +1,29 @@
+body {
+	padding: 25px;
+	background-color: rgb(255, 128, 64);
+	margin: 10px;
+}
+
+#main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#bottom {
+	border: 2px solid green;
+}
+
+
+button {
+	width: 100px;
+}
+
+.slot {
+	display: flex;
+	flex-direction: column;
+	aspect-ratio: 1/1;
+	height: 200px;
+	border-radius: 20px;
+	border: 1px solid black;
+}
