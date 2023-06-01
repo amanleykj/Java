@@ -34,13 +34,22 @@ public class BookService {
             return null;
         }
     }
-    // updates a book
-    public Book updateBook(Book b) {
-        return bookRepository.save(b);
-    }
     
     public List<Book> findBookContaining(String search) {
     	return bookRepository.findByDescriptionContaining(search);
     }
 
+    // updates a book
+    public Book updateBook(Book b) {
+        return bookRepository.save(b);
+   }
+    
+    // deletes a book
+    public void deleteBook(Long id) {
+    	Optional<Book> optionalBook = bookRepository.findById(id);
+    	if(optionalBook.isPresent()) {
+    		bookRepository.deleteById(id);
+    	}
+    }
+    
 }

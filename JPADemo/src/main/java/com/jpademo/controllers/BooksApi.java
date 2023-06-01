@@ -18,6 +18,12 @@ public class BooksApi {
     public BooksApi(BookService bookService){
         this.bookService = bookService;
     }
+    
+    @RequestMapping("/")
+    public String home() {
+    	return "index.jsp";
+    }
+    
     @RequestMapping("/api/books")
     public List<Book> index() {
         return bookService.allBooks();
@@ -33,6 +39,23 @@ public class BooksApi {
     public Book show(@PathVariable("id") Long id) {
         Book book = bookService.findBook(id);
         return book;
+    }
+    
+    @RequestMapping(value = "/api/books/{id}", method = RequestMethod.PUT)
+    public Book update(
+    		@PathVariable("id") Long id,
+    		@RequestParam(value = "title") String title,
+    		@RequestParam(value = "description") String desc,
+    		@RequestParam(value = "language") String lang,
+    		@RequestParam(value = "pages") Integer numOfPages) {
+    	Book book = new Book(title, desc, lang, numOfPages);
+    	book.setId(id);
+    	return bookService.updateBook(book);
+    }
+    
+    @RequestMapping(value = "/api/books/{id}", method = RequestMethod.DELETE)
+    public void destroy(@PathVariable("id") Long id) {
+    	bookService.deleteBook(id);
     }
 
 }
